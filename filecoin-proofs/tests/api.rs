@@ -7,7 +7,7 @@ use std::sync::Once;
 use anyhow::{ensure, Result};
 use bellperson::groth16;
 use bincode::serialize;
-use blstrs::{Bls12, Fr};
+use blstrs::{Bls12, Scalar as Fr};
 use ff::Field;
 use filecoin_hashers::Hasher;
 use filecoin_proofs::{
