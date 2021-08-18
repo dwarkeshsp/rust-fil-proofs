@@ -1,4 +1,5 @@
-use bellperson::{bls::Bls12, gadgets::num::AllocatedNum, ConstraintSystem, SynthesisError};
+use bellperson::{gadgets::num::AllocatedNum, ConstraintSystem, SynthesisError};
+use blstrs::Bls12;
 use filecoin_hashers::{POSEIDON_CONSTANTS_11, POSEIDON_CONSTANTS_2};
 use generic_array::typenum::{U11, U2};
 use neptune::circuit::poseidon_hash;
@@ -22,7 +23,8 @@ where
 mod tests {
     use super::*;
 
-    use bellperson::{bls::Fr, util_cs::test_cs::TestConstraintSystem};
+    use bellperson::util_cs::test_cs::TestConstraintSystem;
+    use blstrs::Scalar as Fr;
     use ff::Field;
     use filecoin_hashers::{poseidon::PoseidonHasher, HashFunction, Hasher};
     use rand::SeedableRng;

@@ -5,10 +5,10 @@ use std::hash::Hash as StdHash;
 pub use crate::poseidon_types::*;
 
 use bellperson::{
-    bls::{Bls12, Fr},
     gadgets::{boolean::Boolean, num::AllocatedNum},
     ConstraintSystem, SynthesisError,
 };
+use blstrs::{Bls12, Scalar as Fr};
 use ff::PrimeField;
 use merkletree::{
     hash::{Algorithm as LightAlgorithm, Hashable as LightHashable},

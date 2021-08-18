@@ -1,10 +1,10 @@
 use std::marker::PhantomData;
 
 use bellperson::{
-    bls::{Bls12, Fr},
     gadgets::{boolean::Boolean, multipack, num::AllocatedNum, sha256::sha256 as sha256_circuit},
     Circuit, ConstraintSystem, SynthesisError,
 };
+use blstrs::{Bls12, Scalar as Fr};
 use ff::PrimeField;
 use filecoin_hashers::Hasher;
 use pairing::Engine;

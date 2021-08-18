@@ -353,10 +353,8 @@ where
 mod tests {
     use super::*;
 
-    use bellperson::{
-        bls::{Bls12, Fr},
-        util_cs::test_cs::TestConstraintSystem,
-    };
+    use bellperson::util_cs::test_cs::TestConstraintSystem;
+    use blstrs::{Bls12, Scalar as Fr};
     use rand::SeedableRng;
     use rand_xorshift::XorShiftRng;
 

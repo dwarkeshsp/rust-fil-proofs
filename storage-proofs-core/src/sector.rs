@@ -1,7 +1,7 @@
 use std::collections::BTreeSet;
 use std::fmt::{self, Display, Formatter};
 
-use bellperson::bls::Fr;
+use blstrs::Scalar as Fr;
 use byteorder::{ByteOrder, LittleEndian};
 use serde::{Deserialize, Serialize};
 

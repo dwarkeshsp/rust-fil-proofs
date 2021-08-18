@@ -2,7 +2,7 @@ use std::io::{Cursor, Read};
 use std::iter::Iterator;
 
 use anyhow::Result;
-use bellperson::bls::Fr;
+use blstrs::Scalar as Fr;
 use filecoin_proofs::{
     add_piece, commitment_from_fr,
     pieces::{

@@ -1,5 +1,5 @@
 use anyhow::{ensure, Result};
-use bellperson::bls::Fr;
+use blstrs::Scalar as Fr;
 use ff::PrimeField;
 
 #[derive(Debug, thiserror::Error)]

@@ -1,6 +1,6 @@
 use std::panic::panic_any;
 
-use bellperson::bls::Fr;
+use blstrs::Scalar as Fr;
 use ff::Field;
 use filecoin_proofs::{
     as_safe_commitment, verify_seal, DefaultOctLCTree, DefaultTreeDomain, PoRepConfig,

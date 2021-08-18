@@ -635,7 +635,7 @@ pub fn create_labels_for_decoding<Tree: 'static + MerkleTreeTrait, T: AsRef<[u8]
 mod tests {
     use super::*;
 
-    use bellperson::bls::Fr;
+    use blstrs::Scalar as Fr;
     use ff::PrimeField;
     use filecoin_hashers::poseidon::PoseidonHasher;
     use generic_array::typenum::{U0, U2, U8};

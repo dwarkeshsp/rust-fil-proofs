@@ -1,8 +1,8 @@
 use bellperson::{
-    bls::{Bls12, Fr},
     util_cs::{metric_cs::MetricCS, test_cs::TestConstraintSystem},
     Circuit, ConstraintSystem,
 };
+use blstrs::{Bls12, Scalar as Fr};
 use ff::Field;
 use filecoin_hashers::{poseidon::PoseidonHasher, sha256::Sha256Hasher, Hasher};
 use fr32::fr_into_bytes;

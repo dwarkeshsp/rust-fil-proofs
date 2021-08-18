@@ -1,4 +1,4 @@
-use bellperson::bls::Fr;
+use blstrs::Scalar as Fr;
 use filecoin_hashers::Domain;
 
 pub fn encode<T: Domain>(key: T, value: T) -> T {

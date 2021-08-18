@@ -3,7 +3,6 @@ use std::marker::PhantomData;
 
 use anyhow::ensure;
 use bellperson::{
-    bls::{Bls12, Fr},
     gadgets::{
         boolean::{AllocatedBit, Boolean},
         multipack,
@@ -11,6 +10,7 @@ use bellperson::{
     },
     Circuit, ConstraintSystem, SynthesisError,
 };
+use blstrs::{Bls12, Scalar as Fr};
 use filecoin_hashers::{HashFunction, Hasher, PoseidonArity};
 use generic_array::typenum::Unsigned;
 

@@ -4,10 +4,10 @@ use std::panic::panic_any;
 
 use anyhow::ensure;
 use bellperson::{
-    bls::{Bls12, Fr},
     gadgets::{boolean::Boolean, multipack, num::AllocatedNum, sha256::sha256 as sha256_circuit},
     ConstraintSystem, SynthesisError,
 };
+use blstrs::{Bls12, Scalar as Fr};
 use ff::{Field, PrimeField};
 use merkletree::{
     hash::{Algorithm, Hashable},

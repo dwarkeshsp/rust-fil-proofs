@@ -14,6 +14,7 @@ byte-slice-cast = "1.0.0"
 byteorder = "1"
 ff = "0.10.0"
 thiserror = "1.0.6"
+blstrs = { git = "https://github.com/filecoin-project/blstrs", branch = "halo" }
 
 [dev-dependencies]
 bitvec = "0.17"

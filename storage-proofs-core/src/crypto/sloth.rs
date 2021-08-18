@@ -1,4 +1,4 @@
-use bellperson::bls::Fr;
+use blstrs::Scalar as Fr;
 
 /// Sloth based encoding.
 #[inline]

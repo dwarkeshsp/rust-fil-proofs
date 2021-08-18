@@ -182,11 +182,8 @@ pub fn default_rows_to_discard(leafs: usize, arity: usize) -> usize {
 mod tests {
     use super::*;
 
-    use bellperson::{
-        bls::{Bls12, Fr},
-        gadgets::num::AllocatedNum,
-        util_cs::test_cs::TestConstraintSystem,
-    };
+    use bellperson::{gadgets::num::AllocatedNum, util_cs::test_cs::TestConstraintSystem};
+    use blstrs::{Bls12, Scalar as Fr};
     use ff::Field;
     use filecoin_hashers::{sha256::Sha256Function, HashFunction};
     use fr32::fr_into_bytes;

@@ -1,6 +1,6 @@
 use std::fmt::Debug;
 
-use bellperson::bls::Fr;
+use blstrs::Scalar as Fr;
 use generic_array::typenum::{U0, U11, U16, U2, U24, U36, U4, U8};
 use lazy_static::lazy_static;
 use neptune::{poseidon::PoseidonConstants, Arity};

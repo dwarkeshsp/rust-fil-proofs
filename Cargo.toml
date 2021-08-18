@@ -11,3 +11,6 @@ members = [
   "sha2raw",
   "filecoin-hashers",
 ]
+
+[patch.crates-io]
+pairing = { git = "https://github.com/zkcrypto/pairing", branch = "main" }

@@ -5,9 +5,9 @@ use std::path::{Path, PathBuf};
 use std::sync::Once;
 
 use anyhow::{ensure, Result};
-use bellperson::bls::{Bls12, Fr};
 use bellperson::groth16;
 use bincode::serialize;
+use blstrs::{Bls12, Fr};
 use ff::Field;
 use filecoin_hashers::Hasher;
 use filecoin_proofs::{

@@ -1,4 +1,4 @@
-use bellperson::bls::Fr;
+use blstrs::Scalar as Fr;
 use ff::Field;
 use filecoin_hashers::{blake2s::Blake2sHasher, sha256::Sha256Hasher, Domain, Hasher};
 use fr32::fr_into_bytes;

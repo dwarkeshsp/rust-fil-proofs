@@ -73,10 +73,8 @@ where
 mod tests {
     use super::*;
 
-    use bellperson::{
-        bls::{Bls12, Fr},
-        util_cs::test_cs::TestConstraintSystem,
-    };
+    use bellperson::util_cs::test_cs::TestConstraintSystem;
+    use blstrs::{Bls12, Scalar as Fr};
     use ff::Field;
     use filecoin_hashers::sha256::Sha256Hasher;
     use fr32::{bytes_into_fr, fr_into_bytes};

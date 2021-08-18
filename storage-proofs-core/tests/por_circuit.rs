@@ -1,9 +1,9 @@
 use bellperson::{
-    bls::{Bls12, Fr},
     gadgets::{boolean::AllocatedBit, multipack, num::AllocatedNum},
     util_cs::test_cs::TestConstraintSystem,
     Circuit, ConstraintSystem,
 };
+use blstrs::{Bls12, Scalar as Fr};
 use ff::Field;
 use filecoin_hashers::{
     blake2s::Blake2sHasher, poseidon::PoseidonHasher, sha256::Sha256Hasher, Domain, Hasher,

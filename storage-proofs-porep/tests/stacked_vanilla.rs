@@ -1,6 +1,6 @@
 use std::fs::remove_file;
 
-use bellperson::bls::Fr;
+use blstrs::Scalar as Fr;
 use ff::{Field, PrimeField};
 use filecoin_hashers::{
     blake2s::Blake2sHasher, poseidon::PoseidonHasher, sha256::Sha256Hasher, Domain, Hasher,

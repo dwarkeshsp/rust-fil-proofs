@@ -4,13 +4,13 @@ use std::panic::panic_any;
 
 use anyhow::ensure;
 use bellperson::{
-    bls::{Bls12, Fr},
     gadgets::{
         blake2s::blake2s as blake2s_circuit, boolean::Boolean, multipack, num::AllocatedNum,
     },
     ConstraintSystem, SynthesisError,
 };
 use blake2s_simd::{Hash as Blake2sHash, Params as Blake2s, State};
+use blstrs::{Bls12, Scalar as Fr};
 use ff::{Field, PrimeField};
 use merkletree::{
     hash::{Algorithm, Hashable},

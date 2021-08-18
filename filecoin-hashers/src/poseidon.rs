@@ -4,10 +4,10 @@ use std::panic::panic_any;
 
 use anyhow::ensure;
 use bellperson::{
-    bls::{Bls12, Fr},
     gadgets::{boolean::Boolean, num::AllocatedNum},
     ConstraintSystem, SynthesisError,
 };
+use blstrs::{Bls12, Scalar as Fr};
 use ff::{Field, PrimeField};
 use generic_array::typenum::{marker_traits::Unsigned, U2};
 use merkletree::{

@@ -29,6 +29,7 @@ anyhow = "1.0.23"
 neptune = { git = "https://github.com/filecoin-project/neptune", branch = "halo" }
 num_cpus = "1.10.1"
 fr32 = { path = "../fr32", version = "^2.0.0", default-features = false }
+blstrs = { git = "https://github.com/filecoin-project/blstrs", branch = "halo" }
 
 [dev-dependencies]
 tempfile = "3"
